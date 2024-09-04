@@ -5,7 +5,7 @@
 - [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
-- [Mesh file analysis](#Mesh file analysis)
+- [Mesh file analysis](#Mesh-file-analysis)
 - [FAQ](#faq)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
