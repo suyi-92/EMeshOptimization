@@ -117,6 +117,8 @@ This project does not rely on any external libraries. The repository for this pr
 
 ## Mesh file analysis
 
+The input files can be found at [this link](https://drive.google.com/drive/folders/1ziiWzmorx82NiVJPxWI0yoBrPpk_Lzrg?usp=drive_link).
+
 The mesh data provided in this project is fully open and only contains some common internal data. For the input file of the API function `EMeshOptimizationInitialMeshImportFromTXTWithMoreInfo`, we recommend the following format:
 
 1. **Number of vertices**
