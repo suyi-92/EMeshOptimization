@@ -34,6 +34,8 @@ Step-by-step instructions for installing your project so that users can quickly 
 
 This project does not rely on any external libraries. The repository for this project can be found at https://github.com/suyi-92/EMeshOptimization.git. This is a dynamic link library implemented in C++, and it is recommended to include and use it through Visual Studio 2022 IDE for the best experience.
 
+The `EMeshOptimizationTest` project in the repository is a sample project we created. Testers can directly open and use it, or they can build their own project or integrate it into an existing project based on the configurations and the steps provided below.
+
 ### Steps to Use the Library
 
 1. **Clone the Repository**
@@ -107,17 +109,19 @@ This project does not rely on any external libraries. The repository for this pr
    }
    ```
 
+   It is important to note the parameter settings for the mesh file input and output functions, as the file path may need to be adjusted based on your specific environment. The other function parameters are set to default values, but you can modify them for testing according to the descriptions provided in the paper.
+
 6. **Run the Program**
 
    After successfully linking the library and writing your code, you can build and run your project as usual. Visual Studio 2022 will handle the execution, and you should be able to see the results of your mesh optimization.
-   
+
 7. **For Specialization**
-   
+
    You can independently choose the relevant API functions from the *"EMeshOptimization.h"* header file for diverse testing and verification. For detailed usage, refer to step 5.
 
 ## Mesh file analysis
 
-The input files can be found at [this link](https://drive.google.com/drive/folders/1ziiWzmorx82NiVJPxWI0yoBrPpk_Lzrg?usp=drive_link).
+Due to the file size limit of GitHUb, the current repository only contains mesh files with a small number of mesh units. The complete mesh file can be found at [this link](https://drive.google.com/drive/folders/1ziiWzmorx82NiVJPxWI0yoBrPpk_Lzrg?usp=sharing).
 
 The mesh data provided in this project is fully open and only contains some common internal data. For the input file of the API function `EMeshOptimizationInitialMeshImportFromTXTWithMoreInfo`, we recommend the following format:
 
