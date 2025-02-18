@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-- [Update Log](#Update Log)
+- [Update Log](#Update-Log)
 - [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
