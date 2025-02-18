@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+- [Update Log](#Update Log)
 - [Project Description](#project-description)
 - [Features](#features)
 - [Installation](#installation)
@@ -11,6 +12,16 @@
 - [Acknowledgments](#acknowledgments)
 
 ---
+
+## Update Log
+
+#### 2025-02-18
+
+- A new multi-process parallel grid optimization feature has been added. We developed the parallel version of the algorithm using Microsoft MPI v10.1.3. To conduct parallel testing, please download and install [Microsoft MPI v10.1.3](https://www.microsoft.com/en-us/download/details.aspx?id=105289), and then add or modify the corresponding library path accordingly. We use a domain decomposition algorithm to distribute work across multiple processes, employing the METIS library for mesh partitioning and the METIS_PartMeshDual API function to subdivide the entire mesh domain. 
+- Surface mesh quality optimization has not been included in the current repository because it requires the use of the related API functions from the commercial ACIS library, and therefore it is not currently available.
+- The **EMeshOptimizationTest** project in this repository is intended for testing purposes only. The ***Release*** configuration runs in single-process mode, while the ***MPIRelease*** configuration operates in multi-process parallel mode. When using ***MPIRelease***, modify the "*-n X \"$(TargetPath)* command parameter by replacing *X* with the desired number of processes.
+
+
 
 ## Project Description
 
